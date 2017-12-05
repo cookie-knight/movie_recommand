@@ -56,7 +56,13 @@ body
     float: left;
     height:23px;
     width:600px;
-    margin-top:5px
+    margin-top:5px;
+    color:#3C3C3C;
+}
+
+.transform_button
+{
+    
 }
 
 .useEditor
