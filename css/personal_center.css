@@ -15,29 +15,49 @@ body
     margin:0 auto;
     height:320px;
     width:1100px;
-    background-color:#BEBEBE;
+    background:url("../img/%E6%B2%99%E6%BB%A9.jpg");
     text-align: center;
 }
 
 .selfImage
 {
     float: left;
-    margin:0 500px;
+    margin:0 487.5px;
     margin-top:57px;
-    height:100px;
-    width:100px;
-    border-radius: 0.5px soild black;
-    background-color:darkgreen;
+    height:125px;
+    width:125px;
 }
 
-.profileHeader-title{
+.selfImage img
+{
+    border-radius:62.5px;
+}
+
+.profileHeader-title
+{
     float: left;
     margin-left:250px;
-    margin-top: 30px;
+    margin-top: 23px;
     height:100px;
     width:600px;
 }
 
+.profileHeader-name
+{
+    float: left;
+    height:35px;
+    width:600px;
+    font-size: 25px;
+    font-weight: thick;
+}
+
+.self_introduction
+{
+    float: left;
+    height:23px;
+    width:600px;
+    margin-top:5px
+}
 
 .useEditor
 {
@@ -48,19 +68,6 @@ body
 }
 
 
-.profileHeader_content
-{
-    margin:0 auto;
-    height:280px;
-    width:1050px;
-}
-
-.profileHeader_contentHead
-{
-    margin-left: 200px;
-    height:30px;
-    width:600px;
-}
 
 
 
