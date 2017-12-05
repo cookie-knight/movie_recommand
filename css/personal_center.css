@@ -1,0 +1,74 @@
+body
+{
+    text-align: center;
+}
+
+.profileHeader
+{
+    margin:0 auto;
+    height:320px;
+    width:1100px;
+}
+
+.card
+{
+    margin:0 auto;
+    height:320px;
+    width:1100px;
+    background-color:#BEBEBE;
+    text-align: center;
+}
+
+.selfImage
+{
+    float: left;
+    margin:0 500px;
+    margin-top:57px;
+    height:100px;
+    width:100px;
+    border-radius: 0.5px soild black;
+    background-color:darkgreen;
+}
+
+.profileHeader-title{
+    float: left;
+    margin-left:250px;
+    margin-top: 30px;
+    height:100px;
+    width:600px;
+}
+
+
+.useEditor
+{
+    margin:0 auto;
+    height:295px;
+    width:1100px;
+    background-color: aliceblue;
+}
+
+
+.profileHeader_content
+{
+    margin:0 auto;
+    height:280px;
+    width:1050px;
+}
+
+.profileHeader_contentHead
+{
+    margin-left: 200px;
+    height:30px;
+    width:600px;
+}
+
+
+
+
+
+
+
+
+
+
+
