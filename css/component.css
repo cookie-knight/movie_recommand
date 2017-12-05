@@ -64,3 +64,20 @@ body{
   float: left;
   width:30px;
 }
+
+/*箭头样式*/
+.item {  
+    float:left; 
+}  
+.dot-right {
+		margin-top: 4px;
+    font-size: 0;  
+    line-height: 0;  
+    border-width: 10px;  
+    border-color: rgb(223,148,99);  
+    border-right-width: 0;  
+    border-style: dashed;  
+    border-left-style: solid;  
+    border-top-color: transparent;  
+    border-bottom-color: transparent;  
+}  
