@@ -81,22 +81,19 @@ body
 
 .profile_nav
 {
-    float:left;
     height:600px;
     width:220px;
     background-color:#E0E0E0;
 }
 
 .nav_shape
-{
-    float:left;
+{	
     height:400px;
     width:220px;
 }
 
 .nav_shape ul
 {
-    float:left;
     width:100%;
     height:100%;
     padding:0;
@@ -113,19 +110,17 @@ body
 
 .nav_shape ul li a
 {
-    float:left;
     color:#ef8e38;
     display:block;
     text-align:center;
     text-decoration:none;
-	font-size: 17px;
-	background: linear-gradient(to left ,rgb(155,122,93),rgb(125,122,116));
-	border-bottom: thin solid rgb(125,122,116);
+		font-size: 17px;
+		background: linear-gradient(to left ,rgb(155,122,93),rgb(125,122,116));
+		border-bottom: thin solid rgb(125,122,116);
 }
 
 .nav_shape ul li a:hover
 {
-    float:left;
     background:linear-gradient(to left ,rgba(17,130,192,0.9),rgba(61,130,163,0.9));
 }
 
