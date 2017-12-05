@@ -1,0 +1,96 @@
+.slideshow{
+	width: 100%;
+	height: 80%;
+}
+
+.slideshow-nav{
+	float: right;
+	width: 20%;
+}
+
+.slideshow-nav ul{
+	width: 100%;
+	padding: 0;
+	background: linear-gradient(to left ,rgba(17,130,192,0.9),rgba(61,130,163,0.9))
+}
+
+.slideshow-nav ul li{
+	width:100%;
+	height:14%;
+	line-height: 30px;
+	color:white;
+  display:block;
+  text-align:center;
+  text-decoration:none;
+	font-size: 17px;
+	border: 0.1px solid white
+}
+
+.slideshow ul li a:hover{
+  width:100%;
+  height:14%;
+  line-height:57px;
+  border:1px solid red;
+  color:red;
+  background:#FFF;
+}
+
+.movie-show{
+	float: left;
+	width: 95%;
+	height: auto;
+	margin-top: 5px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+header{
+	font-size: 18px;
+	width: 100%;
+}
+
+.selected{
+	width: 98%;
+	margin: 13px;
+}
+
+.selected-show{
+	float: left;
+	width: inherit;
+	padding:5px 5px;
+	margin: 0px 8px;
+}
+
+.selected-movie{
+	float:left;
+	width: 250px;
+	height: 457px;
+	margin: 3px 19px 3px 19px;
+	border:1px solid rgb(223,130,59);
+}
+
+.selected-movie img{
+	width:100%;
+	height: 357px;
+}
+
+.selected-movie hr{
+	margin-top: 7px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.selected-movie ol{
+	list-style:none;
+}
+
+.selected-movie ol li{
+	width: 40%;
+	float: left;
+}
+
+.selected-movie p{
+	padding-right: 3px;
+	width: 58%;
+	float: left;
+}
