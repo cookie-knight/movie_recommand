@@ -10,6 +10,58 @@
 	<link rel="stylesheet" type="text/css" href="../css/button.css">
   	<script src="../js/jquery.min.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
+	  <script src="../js/modernizr.custom.js"></script>
+		    <script>
+         /*把相应section的id和用户点击的导航栏href值比较，改变各个section的display属性*/
+            function showSection(id) {
+                var sections = document.getElementsByTagName("section");
+                for(var i=0;i<sections.length;i++) {
+                    if(sections[i].getAttribute("id") != id) {
+                        sections[i].style.display = "none";
+                    }else {
+                        sections[i].style.display = "block";
+                    }
+                }
+            }
+          /*把导航栏href和用户点击href比较，改变相应元素的父元素的className*/
+            function changeColor(id) {
+                var navs = document.getElementsByTagName("nav");
+                var links = navs[1].getElementsByTagName("a");
+                for (var i = 0; i <links.length; i++) {
+                    var sectionId = links[i].getAttribute("href").split("#")[1];
+                    if(sectionId == id){
+                        links[i].parent(.li).className = "special";
+                    }else {
+                        links[i].parent(.li).className = "";
+                    }
+                }
+            }
+            function getId() {
+                var navs = document.getElementsByTagName("nav");
+                var links = navs[0].getElementsByTagName("a");
+                for (var i = 0; i <links.length; i++) {
+                    //获取导航栏的href值
+                    var secId = links[i].getAttribute("href").split("#")[1];
+                    if (!document.getElementById(secId)) continue;
+                    //设置最初的演示
+                    document.getElementById(secId).style.display = "none";
+                    document.getElementById("date1").style.display = "block";
+                    /*这里存在作用域问题，secId是个局部变量，它在getId函数执行期间存在，
+                    到时间处理函数执行的时候就不存在了，故在这里为每个链接创建了一个自定义的属性destination*/
+                    links[i].destination = secId;
+                    links[i].onclick = function() {
+                        showSection(this.destination);
+                        changeColor(this.destination);
+                        return false;
+                    }
+
+                };
+            }
+            
+        window.onload = function(){
+            getId();
+        }
+		</script>
 </head>
     
 <body>
@@ -70,7 +122,106 @@
 		</div>
 		
 		<div class="cinema_comparing_div">
-			
+			<nav class="select_date">
+          <ul>
+            <li class="special"><a href="#date1">今天<br><span>12-10</span></a></li>
+            <li><a href="#date2">明天<br><span>12-11</span></a></li>
+            <li><a href="#date3">后天<br><span>12-12</span></a></li>
+          </ul>
+        </nav> 
+			<div class="compared_info">
+				<section id="date1">
+					<div class="cinema">
+						<div class="cinema_name">月星环球国际影城</div>
+						<div class="cinema_distance"><span>0.1</span>km</div>
+						<div class="cinema_price"><span>48</span>元</div>
+						<div class="button button-glow button-rounded button-caution">购票</div>
+					</div>
+					<div class="cinema">
+						<div class="cinema_name">成龙耀莱影城</div>
+						<div class="cinema_distance"><span>2.2</span>km</div>
+						<div class="cinema_price"><span>38</span>元</div>
+						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
+					</div>
+					<div class="cinema">
+						<div class="cinema_name">星美影城</div>
+						<div class="cinema_distance"><span>2.3</span>km</div>
+						<div class="cinema_price"><span>38</span>元</div>
+						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
+					</div>
+					<div class="cinema">
+						<div class="cinema_name">巴黎春天</div>
+						<div class="cinema_distance"><span>2.3</span>km</div>
+						<div class="cinema_price"><span>28</span>元</div>
+						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
+					</div>
+					<div class="cinema">
+						<div class="cinema_name">SFC上影影城</div>
+						<div class="cinema_distance"><span>4.6</span>km</div>
+						<div class="cinema_price"><span>28</span>元</div>
+						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
+					</div>
+					<div class="cinema">
+						<div class="cinema_name">SFC上影影城</div>
+						<div class="cinema_distance"><span>4.6</span>km</div>
+						<div class="cinema_price"><span>28</span>元</div>
+						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
+					</div>
+					<div class="cinema">
+						<div class="cinema_name">SFC上影影城</div>
+						<div class="cinema_distance"><span>4.6</span>km</div>
+						<div class="cinema_price"><span>28</span>元</div>
+						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
+					</div>
+				</section>
+				<section id="date2">
+										<div class="cinema">
+						<div class="cinema_name">月星环球国际影城</div>
+						<div class="cinema_distance"><span>0.1</span>km</div>
+						<div class="cinema_price"><span>48</span>元</div>
+						<div class="button button-glow button-rounded button-caution">购票</div>
+					</div>
+					<div class="cinema">
+						<div class="cinema_name">成龙耀莱影城</div>
+						<div class="cinema_distance"><span>2.2</span>km</div>
+						<div class="cinema_price"><span>38</span>元</div>
+						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
+					</div>
+					<div class="cinema">
+						<div class="cinema_name">星美影城</div>
+						<div class="cinema_distance"><span>2.3</span>km</div>
+						<div class="cinema_price"><span>38</span>元</div>
+						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
+					</div>
+					<div class="cinema">
+						<div class="cinema_name">巴黎春天</div>
+						<div class="cinema_distance"><span>2.3</span>km</div>
+						<div class="cinema_price"><span>28</span>元</div>
+						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
+					</div>
+					<div class="cinema">
+						<div class="cinema_name">SFC上影影城</div>
+						<div class="cinema_distance"><span>4.6</span>km</div>
+						<div class="cinema_price"><span>28</span>元</div>
+						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
+					</div>
+					<div class="cinema">
+						<div class="cinema_name">SFC上影影城</div>
+						<div class="cinema_distance"><span>4.6</span>km</div>
+						<div class="cinema_price"><span>28</span>元</div>
+						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
+					</div>
+					<div class="cinema">
+						<div class="cinema_name">SFC上影影城</div>
+						<div class="cinema_distance"><span>4.6</span>km</div>
+						<div class="cinema_price"><span>28</span>元</div>
+						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
+					</div>
+				</section>
+				<section id="date3">
+					<div class="no_data">暂无院线数据</div>
+				</section>
+			</div>
 		</div>
 	</div>
 	
