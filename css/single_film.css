@@ -1,0 +1,176 @@
+.wrapper
+{
+    height:1800px;
+    margin:0 auto;
+    width:1200px;
+    background-color:#E0E0E0;
+}
+
+.block
+{
+    height:30px;
+    width:1200px;
+    margin:0 auto;
+}
+
+.content
+{
+    height:1600px;
+    margin:0;
+    width:1200px;
+}
+
+.name
+{
+    height:50px;
+    width:1150px;
+    float:left;
+    color:#4F4F4F;
+    padding-left: 50px;
+}
+
+.film_content
+{
+    float:left;
+    height:410px;
+    width:1200px;
+    margin:0 auto;
+    margin-top: 20px;
+}
+
+.film_poster
+{
+    float:left;
+    height:391px;
+    width:306px;
+    margin-left:230px;
+}
+
+.film_poster img
+{
+    height:391px;
+    width:306px;
+}
+
+.info
+{
+    float:left;
+    height:520px;
+    width:465px;
+    margin-left:135px;
+}
+
+.info_content
+{
+    float:left;
+    height:380px;
+    width:465px;
+    margin-top: 20px;
+}
+
+.p1
+{
+    font-size: 14px;
+    color:#4F4F4F;
+}
+
+.transition
+{
+    float:left;
+    width:1200px;
+    height:35px;
+}
+
+.hr-style
+{
+    height:2px;
+    border:none;
+    border-top:1px solid #ef8e38;
+    width:900px;
+    margin:0 auto;
+    margin-top: 18px;
+}
+
+.comment
+{
+    height:700px;
+    width:1200px;
+    float:left;
+}
+
+.name-h2
+{
+    height:50px;
+    width:1150px;
+    float:left;
+    color: #4F4F4F;
+    padding-left: 50px;
+    font-weight:normal;
+    margin-top:20px;
+}
+
+.comment_picture
+{
+    float:left;
+    margin-left:350px;
+    width:500px;
+    height:380px;
+    
+}
+
+.comment_picture img
+{
+    height:360px;
+    width:500px;
+   
+}
+
+.instruction_content
+{
+    float:left;
+    height:20px;
+    width:70px;
+    margin-left:480px;
+    font-size: 14px;
+}
+
+.instruction_link
+{
+    float:left;
+    height:25px;
+    width:100px;
+    margin-left:0px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
