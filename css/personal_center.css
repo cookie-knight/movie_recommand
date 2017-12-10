@@ -49,6 +49,7 @@ body
     width:600px;
     font-size: 25px;
     font-weight: thick;
+    color:#BB5500;
 }
 
 .self_introduction
@@ -57,7 +58,7 @@ body
     height:23px;
     width:600px;
     margin-top:5px;
-    color:#3C3C3C;
+    color:#BB5500;
 }
 
 .transform_button
@@ -82,7 +83,7 @@ body
 .profile_nav
 {
     float:left;
-    height:600px;
+    height:224px;
     width:220px;
     background-color:#E0E0E0;
 }
@@ -132,13 +133,7 @@ body
     background:linear-gradient(to left ,#108dc7,#ef8e38);
 }
 
-.profile_show
-{
-    float:left;
-    height:600px;
-    width:880px;
-    background-color:#F0F0F0;
-}
+
 
 
 
