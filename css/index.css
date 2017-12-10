@@ -1,3 +1,4 @@
+/*轮播图样式*/
 .slideshow{
 	position: absolute;
 	width: 100%;
@@ -34,6 +35,7 @@
   background:linear-gradient(to left ,rgba(17,130,192,0.9),rgba(61,130,163,0.9));
 }
 
+/*电影内容展示*/
 .movie-show{
 	float: left;
 	width: 1200px;
@@ -116,6 +118,9 @@ header p{
 	padding-right: 3px;
 	width: 50%;
 	float: left;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .more{
