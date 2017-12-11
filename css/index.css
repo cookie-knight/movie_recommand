@@ -70,6 +70,7 @@ header p{
 .selected{
 	width: 98%;
 	margin: 13px;
+    margin-top:10px;
 }
 
 .selected-show{
