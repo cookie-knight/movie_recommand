@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  	<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
         <title>FilmDog - 私人定制你的电影世界</title>
     </head>
 
@@ -16,18 +20,24 @@
             <div class="main_desk">
                 <div class="main_nav">
                     <div class="nav_content">
-                        <a href="../html/assign.html" class="active">注册</a>
-                        <a href="../html/login.html" class="active">登录</a>
+                        <a href="../html/assign.html" class="activeassign">注册</a>
+                        <a href="../html/login.html" class="activelogin">登录</a>
                     </div>
                 </div>
                 <div class="main_view">
+                  <form method="post" novalidate="novalidate" class="inner_content">
                     <div class="group_inputs">
-                        <div class="c1"></div>
-                        <div class="c2"></div>
+                        <div class="c1">
+                             <input type="text" class="input_style" name="account" aria-label="手机号"placeholder="请输入手机号" required>
+                        </div>
+                        <div class="c1">
+                            <input type="password" class="input_style" name="password" aria-label="密码"placeholder="请输入密码" required>
+                        </div>
                     </div>
                     <div class="button_command">
                         <button onClick="window.open('../index.html')" class="sign_button" type="submit">登录</button>
                     </div>
+                   </form>
                 </div>
             </div>
         </div>

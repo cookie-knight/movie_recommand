@@ -6,7 +6,7 @@
 }
 
 .slideshow-nav{
-	margin-top: 40px;
+	margin-top: 70px;
 	position: relative;
 	z-index: 2;
 	float: right;
@@ -41,8 +41,7 @@
 	width: 1200px;
 	height: auto;
 	margin-top: 190px;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
+    margin-left:150px;
 	overflow:hidden；
 }
 

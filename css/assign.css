@@ -24,7 +24,7 @@ body
     width:320px;
     height:170px;
     margin:0 auto;
-    margin-top: 150px;
+    margin-top: 130px;
 }
 
 .main_header img
@@ -41,7 +41,7 @@ body
     font-size: 16px;
     margin-top: 15px;
     font-weight: normal;
-    color:#6C6C6C;
+    color:#4F4F4F;
 }
 
 .main_desk
@@ -49,6 +49,7 @@ body
     width:320px;
     height:400px;
     margin:0 auto;
+    margin-top:15px;
 }
 
 .main_nav
@@ -65,13 +66,23 @@ body
     margin:0 auto;
 }
 
-.active
+.activelogin
 {
     float:left;
     height:30px;
     width:40px;
     margin-left:20px;
     color:#8E8E8E;
+    font-size: 16px;
+}
+
+.activeassign
+{
+    float:left;
+    height:30px;
+    width:40px;
+    margin-left:20px;
+    color:coral;
     font-size: 16px;
 }
 
@@ -94,12 +105,23 @@ body
 
 .c1
 {
-    width:220px;
-    height:45px;
+    width:230px;
+    height:42px;
     float:left;
     margin-left:40px;
-    border-bottom: thin solid #FCFCFC;
-    background-color:#F0F0F0;
+    border-color:aquamarine;
+}
+
+
+.input_style
+{
+    float:left;
+    width:220px;
+    height:40px;
+    padding-left: 7px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0;
 }
 
 .c2
