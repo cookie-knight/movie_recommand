@@ -8,13 +8,20 @@
     border:thin solid #D0D0D0;
 }
 
-.name
+.name_style
 {
     float:left;
     margin-left:20px;
-    color:black;
+    margin-top: 20px;
+    width:120px;
+    height:40px;
+    color:aliceblue;
     font-weight: normal;
-    font-size:26px;
+    font-size:14px;
+    text-align: center;
+    line-height: 40px;
+    background: linear-gradient(to left ,#108dc7,#ef8e38);
+    border-radius: 5px;
 }
 
 .content
@@ -22,7 +29,7 @@
     float:left;
     height:600px;
     width:838px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .row_movie
