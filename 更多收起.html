@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="%E6%9B%B4%E5%A4%9A%E6%94%B6%E8%B5%B7.css">
+    </head>
+<body>
+    <div id="box">
+    <div id="content">
+        <h4>皮质腕表 水晶刻度大气表盘</h4>
+        <p>瑞典 | Daniel Wellington | 价格:￥1233.24</p>
+        <div id="spread">
+            <img src="img/%E6%B2%99%E6%BB%A9.jpg">
+            <p>税费：进口税 预计146.76元</p>
+            <p>物流：香港仓发货 至中国海关 至杭州市</p>
+            <p>运费：0.00 24：00前付款,预计15日内送达</p>
+        </div>
+    </div>
+    <button id="btn">展开</button>
+    <script>
+            /*获得btn*/
+            var btn = document.getElementById('btn')
+            var spread = document.getElementById('spread')
+            var iSpread = false
+            /*高度*/
+            var height = spread.scrollHeight
+            /*总时间*/
+            var time = 420;
+            /*间隔*/
+            var interval = 8.4
+            /*速度*/
+            var speed = height/(time/interval)
+            /*点击事件*/
+            btn.onclick = function (e) {
+                btn.disabled = 'disabled'
+                if(!iSpread){
+                    var speeds = 0
+                    var timer = setInterval(function () {
+                        speeds += speed
+                        spread.style.height = speeds + 'px'
+
+                        if(parseInt(spread.style.height) >=height){
+                            clearTimeout(timer)
+                            btn.disabled = ''
+                        }
+                    },interval)
+                    this.innerHTML = '收起'
+                }else {
+                    var speeds = height
+                    this.innerHTML = '展开'
+                    var timer = setInterval(function () {
+                        speeds -= speed
+                        spread.style.height = speeds + 'px'
+                        if(speeds <= 0){
+                            clearTimeout(timer)
+                            btn.disabled = ''
+                        }
+                    },interval)
+                }
+                iSpread = !iSpread
+            }
+
+        </script>    
+</div>
+</body>
+</html>
