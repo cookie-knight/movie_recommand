@@ -1,0 +1,133 @@
+/*轮播图样式*/
+.slideshow{
+	position: absolute;
+	width: 100%;
+	height: 500px;
+}
+
+.slideshow-nav{
+	margin-top: 70px;
+	position: relative;
+	z-index: 2;
+	float: right;
+	width: 20%;
+}
+
+.slideshow-nav ul{
+	width: 100%;
+	padding: 0;
+}
+
+.slideshow-nav ul li a{
+	width:90%;
+	height:14%;
+	line-height: 30px;
+	color:white;
+  display:block;
+  text-align:center;
+  text-decoration:none;
+	font-size: 17px;
+	background: linear-gradient(to left ,rgb(155,122,93),rgb(125,122,116));
+	border-bottom: thin solid rgb(125,122,116);
+}
+
+.slideshow-nav ul li a:hover{
+  background:linear-gradient(to left ,rgba(17,130,192,0.9),rgba(61,130,163,0.9));
+}
+
+/*电影内容展示*/
+.movie-show{
+	float: left;
+	width: 1200px;
+	height: auto;
+	margin-top: 190px;
+    margin-left:150px;
+	overflow:hidden；
+}
+
+header{
+	margin-top: 20px;
+	float: left;
+	font-size: 18px;
+	width: 100%;
+	border-bottom: thin solid #ef8e38;
+}
+
+header p{
+	width: 80px;
+	float: left;
+	color: rgb(219,121,45);
+}
+
+.movie-button{
+	margin-top: 4px;
+	font-size: 14px;
+	width: 40px;
+	color: dimgray;
+	background: linear-gradient(to left ,rgba(228,121,38,0.7),rgba(228,121,38,0.3));
+}
+
+.selected{
+	width: 98%;
+	margin: 13px;
+    margin-top:10px;
+}
+
+.selected-show{
+	float: left;
+	width: inherit;
+	padding:5px 5px;
+	margin: 0px 8px;
+}
+
+.selected-movie{
+	float:left;
+	width: 150px;
+	height: 270px;
+	margin: 15px 19px 3px 19px;
+	border:1px solid rgb(223,130,59);
+	background-color:rgb(230,235,235);
+}
+
+.selected-movie img{
+	width:100%;
+	height: 200px;
+}
+
+.selected-movie hr{
+	margin-top: 7px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.selected-movie ol{
+	padding: 0;
+	padding-left: 3px;
+	float: left;
+	list-style:none;
+	font-size: 5px;
+	width: 100%;
+}
+
+.selected-movie ol li{
+	width: 50%;
+	float: left;
+}
+
+.selected-movie p{
+	padding-right: 3px;
+	width: 50%;
+	float: left;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.more{
+	height: 100%;
+	text-align: center;
+}
+
+bottom-border{
+	margin-bottom: 30px;
+}
