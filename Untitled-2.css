@@ -12,7 +12,7 @@
     float:left;
     width:1200px;
     min-height:100px;
-    margin-top:30px;
+    margin-top:40px;
     margin-left:180px;
     border-radius: 3px;
     box-shadow: 0 0 0 1px #E0E0E0;
@@ -70,7 +70,7 @@
     margin-top: 0px;
     float:left;
     width:100%;
-		min-height: 30px;
+    min-height: 30px;
     margin-bottom:0;
 }
 
@@ -91,7 +91,7 @@
 {
     margin: 0px;
     float:left;
-    width:1130px;
+    width:1080px;
     padding-left: 0px;
 }
 
@@ -147,10 +147,65 @@
     overflow: hidden;
 }
 
+.movie_show
+{
+    width:1150px;
+    height:3000px;
+    float:left;
+    margin-left: 180px;
+    margin-top: 50px;
+}
 
+.row_movie
+{
+    width:1200px;
+    height:290px;
+    float:left;  
+    margin-top: 20px;
+}
 
+.single_movie
+{
+    width:204px;
+    height:288px;
+    float:left;
+}
 
+.movie_post
+{
+    width:204px;
+    height:238px;
+    float:left;    
+}
 
+.movie_post img
+{
+    width:180px;
+    height:236px;
+    float:left;
+}
+
+.movie_introduction
+{
+    float:left;
+    width:204px;
+    height:50px;
+}
+
+.movie_name
+{
+    float:left;
+    width:180px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.row_last_movie
+{
+    float:left;
+    width:180px;
+    height:288px;
+}
 
 
 
