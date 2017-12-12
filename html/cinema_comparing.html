@@ -9,8 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="../css/cinema_comparing.css">
 	<link rel="stylesheet" type="text/css" href="../css/button.css">
   	<script src="../js/jquery.min.js"></script>
-		<script src="../js/bootstrap.min.js"></script>
-	  <script src="../js/modernizr.custom.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/modernizr.custom.js"></script>
 		    <script>
          /*把相应section的id和用户点击的导航栏href值比较，改变各个section的display属性*/
             function showSection(id) {
@@ -30,9 +30,9 @@
                 for (var i = 0; i <links.length; i++) {
                     var sectionId = links[i].getAttribute("href").split("#")[1];
                     if(sectionId == id){
-                        links[i].parent(.li).className = "special";
+                        links[i].parentNode.className = "special";
                     }else {
-                        links[i].parent(.li).className = "";
+                        links[i].parentNode.className = "";
                     }
                 }
             }
@@ -135,7 +135,7 @@
 		<div class="cinema_comparing_div">
 			<nav class="select_date">
           <ul>
-            <li class="special"><a href="#date1">今天<br><span>12-10</span></a></li>
+            <li><a href="#date1">今天<br><span>12-10</span></a></li>
             <li><a href="#date2">明天<br><span>12-11</span></a></li>
             <li><a href="#date3">后天<br><span>12-12</span></a></li>
           </ul>
@@ -207,24 +207,6 @@
 					<div class="cinema">
 						<div class="cinema_name">巴黎春天</div>
 						<div class="cinema_distance"><span>2.3</span>km</div>
-						<div class="cinema_price"><span>28</span>元</div>
-						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
-					</div>
-					<div class="cinema">
-						<div class="cinema_name">SFC上影影城</div>
-						<div class="cinema_distance"><span>4.6</span>km</div>
-						<div class="cinema_price"><span>28</span>元</div>
-						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
-					</div>
-					<div class="cinema">
-						<div class="cinema_name">SFC上影影城</div>
-						<div class="cinema_distance"><span>4.6</span>km</div>
-						<div class="cinema_price"><span>28</span>元</div>
-						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
-					</div>
-					<div class="cinema">
-						<div class="cinema_name">SFC上影影城</div>
-						<div class="cinema_distance"><span>4.6</span>km</div>
 						<div class="cinema_price"><span>28</span>元</div>
 						<div class="button_margin button button-glow button-rounded button-caution">购票</div>
 					</div>
