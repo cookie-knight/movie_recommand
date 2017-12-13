@@ -32,6 +32,8 @@
 	float: left;
 	width: 230px;
 	height: 318px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 10px #aaaaaa;
 }
 
 .left_show ul{
