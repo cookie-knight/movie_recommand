@@ -23,19 +23,7 @@
                     }
                 }
             }
-          /*把导航栏href和用户点击href比较，改变相应元素的父元素的className*/
-            function changeColor(id) {
-                var navs = document.getElementsByTagName("nav");
-                var links = navs[1].getElementsByTagName("a");
-                for (var i = 0; i <links.length; i++) {
-                    var sectionId = links[i].getAttribute("href").split("#")[1];
-                    if(sectionId == id){
-                        links[i].parentNode.className = "special";
-                    }else {
-                        links[i].parentNode.className = "";
-                    }
-                }
-            }
+                
             function getId() {
                 var navs = document.getElementsByTagName("nav");
                 var links = navs[0].getElementsByTagName("a");
@@ -134,10 +122,10 @@
 		
 		<div class="cinema_comparing_div">
 			<nav class="select_date">
-          <ul>
-            <li><a href="#date1">今天<br><span>12-10</span></a></li>
-            <li><a href="#date2">明天<br><span>12-11</span></a></li>
-            <li><a href="#date3">后天<br><span>12-12</span></a></li>
+          <ul id="select_date_ul">
+            <li onmousedown="fun(0)"><a href="#date1">今天<br><span>12-10</span></a></li>
+            <li onmousedown="fun(1)"><a href="#date2">明天<br><span>12-11</span></a></li>
+            <li onmousedown="fun(2)"><a href="#date3">后天<br><span>12-12</span></a></li>
           </ul>
         </nav> 
 			<div class="compared_info">
@@ -227,5 +215,14 @@
 		</div>
 	</div>
 </footer>
+<script>
+    var nav = document.getElementById("select_date_ul").getElementsByTagName("li");
+    function fun(num) {
+        for (var n = 0; n < nav.length; n++) {
+            nav[n].className="";
+        }
+        nav[num].className="special";
+        }
+</script>
 </body>
 </html>
