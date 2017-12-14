@@ -6,12 +6,34 @@
     float:left;
 }
 
+.style
+{
+    
+    float:left;
+    padding:0;
+    margin-top:20px;
+    height:100px;
+    width:1200px;
+}
+
+.symbol
+{
+    float:left;
+}
+
+.symbol img
+{
+    width:80px;
+    height:80px;
+}
+
 .movie_title
 {
     float:left;
-    margin-top:50px;
-    margin-left:103px;
+    padding:0;
     height:100px;
+    margin-left: 20px;
+    margin-top: 40px;
 }
 
 #movie_name
@@ -19,10 +41,14 @@
     width:auto;
     height:40px;
     background-color:#cd7c03;
-    border-radius: 3px;
+    border-radius: 15px;
     box-shadow: 2px;
     font-size:20px;
     color:#00000090;
+    padding-left:15px;
+    padding-right: 15px;
+    padding-top: 6px;
+  
 }
 
 .movie_link
@@ -30,6 +56,8 @@
     margin-top:7px;
     width:auto;
     height:40px;
+    margin-left: 10px;
+    
 }
 
 .movie_link a
@@ -37,6 +65,7 @@
     width:auto;
     height:20px;
     color:#00000090;
+    font-size: 13px;
 }
 
 /*

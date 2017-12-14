@@ -3,11 +3,6 @@ body
     font-family: "微软雅黑","Open Sans","Helvetica Neue",Arial,sans-serif;
 }
 
-.navigation_bar
-{
-    border-bottom: thin solid white;
-}
-
 .slideshow
 {
 	width: 100%;
@@ -64,7 +59,7 @@ body
     top: 0;
     z-index: -1;
     overflow: hidden;
-     background: linear-gradient(to left ,#108dc7,#ef8e38);
+     background:#00000050;
 }
 
 #pic img

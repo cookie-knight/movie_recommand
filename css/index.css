@@ -4,42 +4,70 @@ body{
 }
 
 .slideshow{
-	float: left;
-	position: absolute;
-	width: auto;
+	width: 100%;
 	height: 450px;
 	text-align: center;
 }
 
-.slideshow-nav{
-	margin-top: 70px;
-	position: relative;
-	z-index: 2;
-	float: right;
-	width: 20%;
+.nav_control
+{
+    float:left;
+    width: 100%;
+	height:450px;
 }
 
-.slideshow-nav ul{
-	width: 100%;
-	padding: 0;
+#nav
+{
+    list-style-type: none;
+    float: right;
+    width:220px;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+    padding-top: 60px;
+    margin-right: 20px;
 }
 
-.slideshow-nav ul li a{
-	width:90%;
-	height:14%;
-	line-height: 30px;
-	color:white;
-  display:block;
-  text-align:center;
-  text-decoration:none;
-	font-size: 17px;
-	background: linear-gradient(to left ,rgb(155,122,93),rgb(125,122,116));
-	border-bottom: thin solid rgb(125,122,116);
+#nav li
+{
+    width: 220px;
+    height: 40px;
+    line-height: 40px;;
+    background-color: #00000080;
+    border-bottom: 0.2 solid white;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}  
+ 
+#nav .now
+{
+   background: linear-gradient(to left ,#108dc7,#ef8e38)
 }
 
-.slideshow-nav ul li a:hover{
-  background:linear-gradient(to left ,rgba(17,130,192,0.9),rgba(61,130,163,0.9));
+#pic
+{
+    list-style-type: none;
+    height: 410px;
+    width:100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 56px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+     background:#00000050;
 }
+
+#pic img
+{
+    width:82%;
+    height:410px;
+    text-align: center;
+}
+
 
 /*电影内容展示*/
 .movie-show{
@@ -47,7 +75,7 @@ body{
 	float: left;
 	max-width: 1550px;
 	height: auto;
-	margin-top: 120px;
+	margin-top: 0px;
 	margin-left: 160px;
 }
 
@@ -82,7 +110,7 @@ header p{
 	max-height: 800px;
 	overflow: hidden;
 	margin:0 auto;
-  margin-top:70px;
+  margin-top:40px;
 }
 
 .selected{

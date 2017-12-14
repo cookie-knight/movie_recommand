@@ -39,60 +39,30 @@
 					<div class="nav_username">哀伤的七夕</div>
         </div>
     </nav>
-    <div class="slideshow">
-      <div id="myCarousel" class="carousel slide" >
-				<!-- 轮播（Carousel）指标 -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
-					<li data-target="#myCarousel" data-slide-to="4"></li>
-					<li data-target="#myCarousel" data-slide-to="5"></li>
-					<li data-target="#myCarousel" data-slide-to="6"></li>
-				</ol>   
-				<!-- 轮播（Carousel）项目 -->
-				<div class="carousel-inner">
-					<div class="item active">
-						<img src="img/back1.jpg" alt="First slide">
-					</div>
-					<div class="item">
-						<img src="img/back1.jpg" alt="Second slide">
-					</div>
-					<div class="item">
-						<img src="img/back1.jpg" alt="Third slide">
-					</div>
-					<div class="item">
-						<img src="img/1920x500.gif" alt="Fourth slide">
-					</div>
-					<div class="item">
-						<img src="img/1920x500.gif" alt="Fifth slide">
-					</div>
-					<div class="item">
-						<img src="img/1920x500.gif" alt="Sixth slide">
-					</div>
-					<div class="item">
-						<img src="img/1920x500.gif" alt="Seventh slide">
-					</div>
-				</div>
-				<!-- 轮播（Carousel）导航 -->
-				<a class="carousel-control left" href="#myCarousel" 
-					 data-slide="prev">&lsaquo;</a>
-				<a class="carousel-control right" href="#myCarousel" 
-					 data-slide="next">&rsaquo;</a>
-			</div> 
+     <div class="slideshow">
+        <!-- 轮播（Carousel）项目 -->
+           <div class="nav_control">  
+                <ul id="nav">
+                   <li onmousemove="fun('0')" class="now">余罪</li>
+                   <li onmousemove="fun('1')">我们的法则</li>
+                   <li onmousemove="fun('2')">跑男</li>
+                   <li onmousemove="fun('3')">废柴兄弟</li>
+                   <li onmousemove="fun('4')">最好的我们</li>
+                   <li onmousemove="fun('5')">大张伟</li>
+                   <li onmousemove="fun('6')">WWDC大会</li>
+                </ul>
+                <div id="pic">
+                   <div><img src="../img/test1.jpg"></div>
+                   <div><img src="../img/test2.jpg"></div>
+                   <div><img src="../img/movie02.jpeg"></div>
+                   <div><img src="../img/movie03.jpg"></div>
+                   <div><img src="../img/movie04.jpg"></div>
+                   <div><img src="../img/movie06.jpg"></div>
+                   <div><img src="../img/%E6%B2%99%E6%BB%A9.jpg"></div>
+                </div>
+           </div>
+               
     </div>
-		<nav class="slideshow-nav">
-			<ul>
-				<li><a href="#">电影1</a></li>
-				<li><a href="#">电影2</a></li>
-				<li><a href="#">电影3</a></li>
-				<li><a href="#">电影4</a></li>
-				<li><a href="#">电影5</a></li>
-				<li><a href="#">电影6</a></li>
-				<li><a href="#">电影7</a></li>
-			</ul>
-		</nav>
 		<div class="Clear"></div>
 		<div class="movie-show">
 			<div class="selected1">
@@ -362,5 +332,23 @@
 		</div>
 	</div>
 </footer>
+    
+     <script>
+    var nav = document.getElementById("nav").getElementsByTagName("li");
+    var navshow = document.getElementById("pic").getElementsByTagName("div");
+    function fun(num) {
+        for (var n = 0; n < nav.length; n++) {
+            nav[n].className="";
+        }
+        nav[num].className="now";
+
+        for(var m=0;m<navshow.length;m++){
+            navshow[m].style.display="none";
+        }
+        navshow[num].style.display="block";
+    }
+
+</script>
+    
 </body>
 </html>
