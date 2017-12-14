@@ -49,11 +49,10 @@
     margin-bottom: 9.5px;
     margin-left: 3px;
     line-height: 30px;
-    font-size:14px;
+    font-size:13.5px;
     border:none;
     border-radius: 5px;
     color:#00000080;
-    text-align: center;
 
 }
 
@@ -138,7 +137,7 @@
     font-size:13px;
     border:none;
     border-radius: 5px;
-    background-color: #FFA042;
+    background-color: #efa65a;
     color:#00000080;
 }
 
@@ -161,16 +160,28 @@
 .row_movie
 {
     width:1200px;
-    height:290px;
+    height:310px;
     float:left;  
     margin-top: 20px;
 }
 
-.single_movie
+.movie-card
 {
     width:204px;
     height:288px;
     float:left;
+}
+
+.single_movie
+{
+    width:180px;
+    height:288px;
+    float:left;
+     background-color: #c2baba;
+    box-shadow: 2px;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
 }
 
 .movie_post
@@ -185,13 +196,21 @@
     width:180px;
     height:236px;
     float:left;
+    transition:all 0.6s;
+	cursor:pointer;
+	border:0;
 }
 
-.movie_introduction
+.movie_post img:hover
+{
+    transform:scale(1.5);
+}
+
+.movie_info
 {
     float:left;
-    width:204px;
-    height:50px;
+    width:180px;
+    height:46px;
 }
 
 .movie_name
@@ -199,7 +218,56 @@
     float:left;
     width:180px;
     text-align: center;
-    margin-top: 15px;
+   height:20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.movie_introduction
+{
+    float:left;
+    width:204px;
+    height:15px;
+}
+
+.note 
+{
+    color:#FFFFFF;
+	width:180px;
+	height:15px;
+    font-size: 12px;
+	display:block;
+	text-decoration:none;
+	cursor:pointer;
+	text-indent:1em;
+	line-height:15px;
+	/*初始化隐藏多余文字*/
+            white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	float:left;
+	position:absolute;
+	bottom:0px;
+	background-color:rgba(0,0,0,0.5);
+	/* 背景变灰 */
+    transition:all 0.6s;
+    display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:10;
+}
+
+.note:hover {
+    color:white;
+    text-decoration: none;
+	width:180px;
+	height:288px;
+	line-height:30px;
+	text-indent:1em;
+	/*显示全部文字*/
+            white-space:normal;
+	word-break:break-word;
+	text-overflow:inherit;
 }
 
 .row_last_movie
@@ -207,4 +275,8 @@
     float:left;
     width:180px;
     height:288px;
+    position: relative;
+    overflow: hidden;
+    background-color: #c2baba;
+    box-shadow: 1px;
 }
