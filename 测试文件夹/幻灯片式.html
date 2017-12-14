@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="%E5%B9%BB%E7%81%AF%E7%89%87%E5%BC%8F.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  	<script src="../js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    </head>
+<body>
+    <div class="cont s--inactive">
+    <!-- cont inner start -->
+    <div class="cont__inner">
+        <!-- el start -->
+        <div class="el">
+            <div class="el__overflow">
+                <div class="el__inner">
+                    <div class="el__bg"></div>
+                    <div class="el__preview-cont">
+                        <h2 class="el__heading">基本信息</h2>
+                    </div>
+                    <div class="el__content">
+                        <div class="el__text">Whatever</div>
+                        <div class="el__close-btn"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="el__index">
+                <div class="el__index-back">F</div>
+                <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="F">F</div>
+                </div>
+            </div>
+        </div>
+        <!-- el end -->
+        <!-- el start -->
+        <div class="el">
+            <div class="el__overflow">
+                <div class="el__inner">
+                    <div class="el__bg"></div>
+                    <div class="el__preview-cont">
+                        <h2 class="el__heading">内容概述</h2>
+                    </div>
+                    <div class="el__content">
+                        <div class="el__text">Whatever</div>
+                        <div class="el__close-btn"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="el__index">
+                <div class="el__index-back">I</div>
+                <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="I">I</div>
+                </div>
+            </div>
+        </div>
+        <!-- el end -->
+        <!-- el start -->
+        <div class="el">
+            <div class="el__overflow">
+                <div class="el__inner">
+                    <div class="el__bg"></div>
+                    <div class="el__preview-cont">
+                        <h2 class="el__heading">影评分析</h2>
+                    </div>
+                    <div class="el__content">
+                        <div class="el__text">Whatever</div>
+                        <div class="el__close-btn"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="el__index">
+                <div class="el__index-back">L</div>
+                <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="L">L</div>
+                </div>
+            </div>
+        </div>
+        <!-- el end -->
+        <!-- el start -->
+        <div class="el">
+            <div class="el__overflow">
+                <div class="el__inner">
+                    <div class="el__bg"></div>
+                    <div class="el__preview-cont">
+                        <h2 class="el__heading">影评阅读</h2>
+                    </div>
+                    <div class="el__content">
+                        <div class="el__text">Whatever</div>
+                        <div class="el__close-btn"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="el__index">
+                <div class="el__index-back">M</div>
+                <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="M">M</div>
+                </div>
+            </div>
+        </div>
+        <!-- el end -->
+       
+    </div>
+    <!-- cont inner end -->
+</div>
+ 
+    <script>
+        var $cont = document.querySelector('.cont');
+var $elsArr = [].slice.call(document.querySelectorAll('.el'));
+var $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
+
+setTimeout(function() {
+    $cont.classList.remove('s--inactive');
+}, 200);
+
+$elsArr.forEach(function($el) {
+    $el.addEventListener('click', function() {
+        if (this.classList.contains('s--active')) return;
+        $cont.classList.add('s--el-active');
+        this.classList.add('s--active');
+    });
+});
+
+$closeBtnsArr.forEach(function($btn) {
+    $btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        $cont.classList.remove('s--el-active');
+        document.querySelector('.el.s--active').classList.remove('s--active');
+    });
+});
+    </script>
+
+</body>
+</html>
