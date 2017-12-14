@@ -1,10 +1,48 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="%E5%8A%A8%E7%94%BB.css">
-        <script src="%E5%8A%A8%E7%94%BB.js"></script>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="%E5%8A%A8%E7%94%BB.css">
+        <script src="../js/jquery.min.js"></script>
     </head>
+
 <body>
-    <canvas id="main-panel"></canvas>
+<div class="wrap">
+    <form action="">
+        <div class="wrap_input">
+            <div class="wrap_Iten">
+                <div class="item_tip">用户名/邮箱</div>
+                <input type="text" tabindex="1" value="" name="username" class="form_input">
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+function focusInputLoginBox(obj) {
+    obj.addClass("form_input-focus");
+    obj.prev(".item_tip").addClass("item_tip_focus")
+}
+
+function blurInputLoginBox(obj) {
+    var v = obj.val();
+    if (v == "") {
+        obj.removeClass("form_input-focus");
+        obj.prev(".item_tip").removeClass("item_tip_focus")
+    } else {
+        obj.addClass("form_input-focus");
+        obj.prev(".item_tip").addClass("item_tip_focus")
+    }
+}
+$(document).ready(function() {
+    $("input").blur(function() {
+        blurInputLoginBox($(this))
+    })
+    $("input").focus(function() {
+        focusInputLoginBox($(this))
+    })
+})
+</script>
+
 </body>
 </html>

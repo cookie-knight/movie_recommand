@@ -99,7 +99,7 @@ body
     width:320px;
     height:400px;
     margin:0 auto;
-    margin-top:15px;
+    margin-top:2px;
 }
 
 .group_inputs
@@ -108,39 +108,66 @@ body
     height:150px;
     float:left;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
-.c1
+.wrap_input
 {
-    width:230px;
-    height:42px;
+   margin-left: 20px;
+    width:260px;
+    height:35px;
     float:left;
-    margin-left:40px;
-    border-color:aquamarine;
-    border-bottom: thin solid #00000040;
+    margin-top: 10px;
+    background-color:#f3b87b;
 }
 
 
-.input_style
+.wrap_Iten
 {
-   float:left;
-    width:223px;
-    height:40px;
-    padding-left: 7px;
-    border-style: none;
-    box-shadow: 0;
-}
-
-.c2
-{
-   width:230px;
-    height:42px;
     float:left;
-    margin-left:40px;
-    margin-top: 0px;
-    border-color:aquamarine;
+    width:260px;
+    height:35px;
+    position: relative;
 }
+
+.item_tip
+{
+    float:left;
+    font-size:13px;
+    color:#00000090;
+    height:17px;
+    width:84px;
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    transition:all .2s linear 0s;
+}
+
+.form_input
+{
+    float:left;
+    height:25px;
+    width:240px;
+    padding:0;
+    margin-top: 10px;
+    margin-left: 10px;
+    border:1px solid #dcdcdc;
+    border-radius:5px;
+    font-size:13px;
+    transition:border-color .15s ease-in-out 0s;
+    outline:none;
+}
+
+.item_tip_focus {
+	color:#5188a6;
+	font-size:12px;
+	top:-8px;
+}
+.form_input-focus {
+	border-color:#5188a6;
+	outline:0 auto;
+}
+
 
 .button_command
 {

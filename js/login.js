@@ -12,7 +12,7 @@ Xq.prototype = {
     //产生一个随机位置，随机颜色随机大小的小球。
     xq: function() {
         this.ba = document.createElement("img");
-        this.ba.src = "http://www.jq22.com/demo/canvasSnow201701172021/images/white-snowflake.png"
+        this.ba.src ="../img/white-snowflake.png";
         this.ba.style.width = this.dx + "px";
         this.ba.style.height = this.dx + "px";
         this.ba.style.position = "absolute";
