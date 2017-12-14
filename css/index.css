@@ -155,9 +155,16 @@ header p{
 	font-size: 14px;
 }
 
+/*用来限制显示的内容多少*/
 #movie_brefinfo{
 	color: #999;
 	font-size: 11px;
+    display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:1;
+	overflow:hidden;
+	width:180px;
+	height:20px;
 }
 
 .more{
