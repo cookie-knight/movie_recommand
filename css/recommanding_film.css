@@ -266,7 +266,7 @@
 	line-height:30px;
 	text-indent:1em;
 	/*显示全部文字*/
-            white-space:normal;
+  					white-space:normal;
 	word-break:break-word;
 	text-overflow:inherit;
 }
