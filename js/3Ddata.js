@@ -2,7 +2,7 @@
 var data = {
 	letv:[
 		{
-			"ul":"#",
+			"ul":"index.html",
 			"title":"Picture information1",
 			"date":"2017.02.01日 11:30",
 			"id":11,
