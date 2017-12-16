@@ -31,7 +31,7 @@ a {
 Patterns - reusable parts of our design
 
 -------------------------------- */
-.cd-btn {
+.cd-btn { 
   display: inline-block;
  /* padding: 1.6em 2.4em;
   font-size: 1.4rem;
@@ -43,7 +43,7 @@ Patterns - reusable parts of our design
     width:223px;
     height:35px;
     float:left;
-    margin-left:40px;
+    margin-left:48px;
     border:none;
     display: block;
     background-color:#ef8e38; 
@@ -55,16 +55,11 @@ Patterns - reusable parts of our design
   -webkit-transition: box-shadow 0.3s;
   -moz-transition: box-shadow 0.3s;
   transition: box-shadow 0.3s;
-}
-
-.button_command a
-{
-    padding-top: 10px;
+	    padding-top: 10px;
     text-decoration: none;
     font-size: 13.3333px;
     color:#343232;
 }
-
 
 .no-touch .cd-btn:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
@@ -152,7 +147,7 @@ Modal window
 }
 .cd-modal p {
   line-height: 1.6;
-  margin: 2em auto;
+  margin: 4em auto;
   max-width: 800px;
 }
 .cd-modal .modal-close {
