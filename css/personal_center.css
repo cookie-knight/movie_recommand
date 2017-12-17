@@ -1,175 +1,370 @@
-body
+.html {
+
+      height: 100%;
+
+    }
+
+    .body {
+
+      padding: 0;
+
+      text-align: center;
+
+      font-family: 'open sans';
+
+      position: relative;
+
+      margin: 0;
+
+      height: 100%;
+
+    }
+
+    
+
+    .wrapper {
+
+    	height: auto;
+
+    	height: 100%;
+
+    	margin: 0 auto; 
+
+    	overflow: hidden;
+        background-color: #DDD6CC;
+
+    }
+
+.main {
+
+      float: left;
+
+      width: 1000px;
+      margin-left: 250px;
+
+      margin-top: 20px;
+      background-color: white;
+      border-radius: 3px;
+      box-shadow: 3px;
+
+    }
+
+.left_main
 {
-    text-align: center;
+    float:left;
+    width:270px;
+    height:3000px;
+    background-color: #E8E5DD;
 }
 
-.profileHeader
+.picture-card
 {
-    margin:0 auto;
-    height:320px;
-    width:1100px;
+    float:left;
+    width:270px;
+    height:230px;
 }
 
-.card
+.picture-card img
 {
-    margin:0 auto;
-    height:320px;
-    width:1100px;
-    text-align: center;
+    vertical-align:middle;
+    height:170px;
+    width:170px;
+    border-radius: 100%;
+    margin-left: 50px;
+    margin-top:30px;
 }
 
-.card_background
+.name
 {
-	position: relative;
-	width:1100px;
-	height:320px
+    height:157px;
+    width:270px;
+    background-color: #ef8e38;
+    float:left;
 }
 
-.card_background img
+.n1
 {
-	float:left;
-	height:320px;
-	width:1100px;
-	z-index:-1;
+    margin-top:48px;
+    font-size: 20px;
+    color:white;
+    margin-left: 30px;
+    font-weight: 400;
 }
 
-.transform_button
+.n2
 {
-	position: absolute;
-	right:80px;
+    margin-top: 10px;
+    font-size: 13px;
+    color:white;
+    margin-left: 30px;
+    font-weight: 100;
 }
 
-.selfImage
+.right_main
 {
-    float: left;
-    margin:0 487.5px;
-    margin-top:57px;
-    height:125px;
-    width:125px;
-	  position:absolute;
-	  top:25px;
-	  text-align: center;
+    float:left;
+    width:730px;
+     height:3000px;
 }
 
-.selfImage img
+ a {
+
+      text-decoration: none;
+
+    }
+
+.jumptp-block
 {
-    border-radius:62.5px;
-	  width:90px;
-	  height:90px;
-	  margin: 0 auto;
+    float:left;
+    width:730px;
 }
 
-.profileHeader-title
+.favborites
 {
-    float: left;
-    margin-left:250px;
-    margin-top: 23px;
-    height:100px;
-    width:600px;
-	  position: absolute;
-}
-
-.profileHeader-name
-{
-    float: left;
-    height:35px;
-    width:600px;
-    font-size: 25px;
-    font-weight: thick;
-    color:#BB5500;
-	  text-align: center;
-}
-
-.self_introduction
-{
-    float: left;
-    height:23px;
-    width:600px;
-    margin-top:5px;
-    color:#BB5500;
-}
-
-.transform_button
-{
-    float:right;
-    margin-right:10px;
-    margin-bottom: 0px;
-}
-
-.transition
-{
-    height:27px;
-}
-
-.profileMain
-{
-    margin:0 auto;
+    float:left;
+    width:730px;
     height:600px;
-    width:1100px;
 }
 
-.profile_nav
+h2.title
 {
     float:left;
-    height:224px;
-    width:220px;
-    background-color:#E0E0E0;
+    font-size:25px;
+    color:#6D461D;
+    margin-left: 20px;
+    margin-top: 30px;
+    width:730px;
 }
+ 
 
-.nav_shape
-{	
-    float:left;
-    height:280px;
-    width:220px;
-}
 
-.nav_shape ul
-{
-    float:left;
-    width:100%;
-    height:100%;
-    margin-top:0px;
-    padding:0;
-}
 
-.nav_shape ul li 
-{
-    float:left;
-    width:100%;
-    height:20%;
-    display:block;
-	background: linear-gradient(to left ,rgb(155,122,93),rgb(125,122,116));
-}
+    
 
-.nav_shape ul li a
-{
-    float:left;
-    color:#fff;
-    display:block;
-    text-align:center;
-    line-height:70px;
-    text-decoration:none;
-    width:100%;
-    height:100%;
-    font-size: 14px;
-    border-bottom: thin solid rgb(125,122,116);
-}
+    .pointer {
 
-.nav_shape ul li a:hover
-{
-    float:left;
-    background:linear-gradient(to left ,#108dc7,#ef8e38);
-}
+      color: #9b59b6;
+
+      font-family: 'Pacifico', cursive;
+
+      font-size: 30px;
+
+      margin-top: 15px;
+
+    }
+
+    .pre {
+
+      margin: 80px auto;
+
+    }
+
+    pre code {
+
+      padding: 35px;
+
+      border-radius: 5px;
+
+      font-size: 15px;
+
+      background: rgba(0,0,0,0.1);
+
+      border: rgba(0,0,0,0.05) 5px solid;
+
+      max-width: 500px;
+
+    }
 
 
 
 
 
+    
 
+   
+    .reload.bell {
 
+      font-size: 12px;
 
+      padding: 20px;
 
+      width: 45px;
 
+      text-align: center;
 
+      height: 47px;
 
+      border-radius: 50px;
 
+      -webkit-border-radius: 50px;
+
+      -moz-border-radius: 50px;
+
+    }
+
+    
+
+    .reload.bell #notification {
+
+      font-size: 25px;
+
+      line-height: 140%;
+
+    }
+
+    
+
+    .reload, .btn{
+
+      display: inline-block;
+
+      border: 4px solid #A2261E;
+
+      border-radius: 5px;
+
+      -moz-border-radius: 5px;
+
+      -webkit-border-radius: 5px;
+
+      background: #CC3126;
+
+      display: inline-block;
+
+      line-height: 100%;
+
+      padding: 0.7em;
+
+      text-decoration: none;
+
+      color: #fff;
+
+      width: 100px;
+
+      line-height: 140%;
+
+      font-size: 17px;
+
+      font-family: open sans;
+
+      font-weight: bold;
+
+    }
+
+    .reload:hover{
+
+      background: #A2261E;
+
+    }
+
+    .btn {
+
+      width: 200px;
+
+      color: #fff;
+
+      border: none;
+
+      margin-left: 10px;
+
+      background: #000;
+
+    }
+
+    .clear {
+
+      width: auto;
+
+    }
+
+    .btn:hover, .btn:hover {
+
+      background: rgba(0,0,0,0.8);
+
+    }
+
+    .btns {
+
+      width: 410px;
+
+      margin: 50px auto;
+
+    }
+
+    .credit {
+
+      opacity: 0.5;
+
+      text-align: center;
+
+      color: #bbb;
+
+      padding: 10px;
+
+      margin: 0 0 40px 0;
+
+      float: left;
+
+      width: 100%;
+
+    }
+
+    .credit a {
+
+      color: #ccc;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+    }
+
+    
+
+    .back {
+
+      position: absolute;
+
+      top: 0;
+
+      left: 0;
+
+      text-align: center;
+
+      display: block;
+
+      padding: 7px;
+
+      width: 100%;
+
+      box-sizing: border-box;
+
+      -moz-box-sizing: border-box;
+
+      -webkit-box-sizing: border-box;
+
+      background: rgba(0, 0, 0, 0.65);
+
+      font-weight: bold;
+
+      font-size: 13px;
+
+      color: #fff;
+
+      -webkit-transition: all 200ms ease-out;
+
+      -moz-transition: all 200ms ease-out;
+
+      -o-transition: all 200ms ease-out;
+
+      transition: all 200ms ease-out;
+
+    }
+
+    .back:hover {
+
+      background: rgba(0, 0, 0, 0.85);
+
+    }
+
+  
+   

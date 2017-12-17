@@ -3,7 +3,8 @@ body{
 }
 
 .navigation_bar{
-  background: linear-gradient(to left ,#108dc7,#ef8e38);
+/*  background: linear-gradient(to left ,#108dc7,#ef8e38);  */
+      background-color:#ef8e38;
   height: 56px; 
 }
 

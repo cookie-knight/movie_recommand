@@ -1,15 +1,48 @@
-<!DOCTYPE HTML>
+<!doctype html>
+
 <html>
-  <head>
-     <meta charset="utf-8">
-     <title>个人中心</title>
-     <link rel="stylesheet" href="../css/personal_center.css">
-     <link rel="stylesheet" href="../css/component.css">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>个人中心</title>
      <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-  </head>
-    
-  <body>
-      <nav class="navigation_bar">
+        <link rel="stylesheet" type="text/css" href="../css/component.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="shortcut icon" id="favicon" href="favicon.png"> 
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+ <script src="../js/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+	<script src="http://www.jq22.com/jquery/1.9.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="../js/jquery.jumpto.js"></script>
+
+  <link href='../css/jumpto.css' rel='stylesheet' type='text/css'>
+    <link href="../css/personal_center.css" rel='stylesheet' type='text/css'>
+
+	<script>
+
+	  $(document).ready( function() {
+
+	    $(".page_container").jumpto({
+
+	      firstLevel: "> h2",
+
+	      secondLevel: "> h3"
+
+	    });
+
+	  });
+
+		
+
+	</script>
+
+</head>
+
+<body>
+    <nav class="navigation_bar">
       <div class="logo_img"><a href="../index.html"><img src="../img/logo.png"></a></div>
        <ul>
          <li><a href="../index.html">主页</a></li>
@@ -22,10 +55,6 @@
           <input class="input_button" type="submit" value="搜索" style="background-color:rgb(77,122,152);color:white">
         </form>
         <div class="navigationbar_right">
-					<!--
-          <span><a href="html/login.html">登录</a></span>
-					<span><a href="html/regisiter.html">注册</a></span>
-					-->
 					<div class="portrait dropdown">
 						<img src="../img/%E5%B0%8F%E5%93%80.jpeg">
 						<div class="dropdown-content">
@@ -36,40 +65,61 @@
 					<div class="nav_username">哀伤的七夕</div>
         </div>
     </nav>
-       
-     <div class="profileHeader">
-         <div class="card">
-						<div class="card_background">
-						  <img src="../img/back1.jpg">
-              <div class="transform_button">
-                <button type="submit">上传封面图</button>
+    
+    
+  <div class="wrapper">
+
+	  <div class="main">
+          <div class="left_main">
+              <div class="picture-card">
+                  <img src="../img/%E5%B0%8F%E5%93%80.jpeg">
               </div>
-              <div class="selfImage">
-                <img src="../img/%E5%B0%8F%E5%93%80.jpeg">
+              <div class="name">
+                  <div class="n1">哀伤的七夕</div>
+                  <div class="n2">生死与共，却固守着疏离...柯哀大爱不解释</div>
               </div>
-              <div class="profileHeader-title">
-                <span class="profileHeader-name">名字</span>
-                <span class="self_introduction" >一句话介绍一下自己吧，让大家了解你</span>
-              </div>
-					   </div>
-			 </div>
-         </div>
-     </div>
-       <div class="transition"></div>
-       <div class="profileMain">
-          <div class="profile_nav">
-              <nav class="nav_shape">
-                  <ul>
-                      <li><a href="personal_interest.html">我的兴趣</a></li>
-                      <li><a href="personal_wanted.html">我的想看</a></li>
-                      <li><a href="personal_history.html">我的历史</a></li>
-                      <li><a href="setting.html">个人设置</a></li>
-                  </ul>
-              </nav>
           </div>
-          <div class="profile_show">
-          </div>
-                  
+          <div class="right_main">
+                    <div class="page_container">
+        
+        <div class="jumpto-block">
+           
+            <h2 class="title">收藏</h2><hr>
+
+          
+
+        </div>
+
+        <div class="jumpto-block">
+
+          <h2 class="title">历史</h2><hr>
+
+    
+
+        </div>
+
+        <div class="jumpto-block">
+
+          <h2 class="title">设置</h2><hr>
+
+          
+
+        </div>        
+
       </div>
-  </body>
+
+          </div>
+ 
+
+
+
+
+    </div>
+
+    
+
+  </div>
+
+</body>
+
 </html>
