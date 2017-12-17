@@ -185,3 +185,18 @@ input:-moz-placeholder{
     border-top-color: transparent;  
     border-bottom-color: transparent;  
 }  
+
+/*导航栏悬浮样式*/
+#top{
+	height: 1px;
+}
+#navbg{
+	width: 100%;
+	height: 56px;
+}
+.scrollNav{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
